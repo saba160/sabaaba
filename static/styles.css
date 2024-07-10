@@ -1,0 +1,190 @@
+header{
+    position:fixed;
+    width:100vw;
+    z-index: 1000;
+}
+
+.bg-dark{
+    z-index:998;
+    width:100vw;
+}
+
+.navbar-toggler{
+    z-index:999;
+    margin-right:2vw;
+}
+
+nav{
+    height:10vh;
+    width:100vw;
+    border-bottom:2px solid white;
+}
+
+body{
+    background-image:url("/static/images/back.jpg");
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
+    background-attachment:fixed;
+}
+
+img{
+    width:20vw;
+    height:20vw;
+    align-items:center;
+}
+
+.col-5{
+    margin:1vw;
+    border:solid rgb(54, 36, 14) 2px;
+    border-radius:10px;
+    background-color:white;
+    overflow:hidden;
+}
+
+.row{
+    width:52vw;
+    align-items:center;
+}
+.list{
+    margin-left:45vw;
+    padding:15vh 0 5vh 0;
+}
+
+.button{
+    font-size:20px;
+    background-color:rgb(0, 191, 255);
+    color:white;
+    margin-top: 8%;
+}
+
+.button-info{
+    background-color:rgb(241, 241, 241);
+    color:darkgrey;
+    margin-top: 4%;
+    margin-bottom:8%;
+}
+
+.button, .button-info{
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    border:solid 2px white;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.button:hover{
+    background-color: rgba(0, 191, 255, 0.521);
+}
+
+.button-info:hover{
+    background-color:rgb(255, 255, 255);
+}
+
+.button:active{
+    background-color: rgb(0, 143, 190);
+}
+
+.button-info:active{
+    background-color:rgb(204, 204, 204);
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+    font-family:arial;
+}
+
+h1{
+    text-align:center;
+}
+
+.cart{
+    background-color:white;
+    border:solid black 2px;
+    border-radius:20px;
+    margin-right:10vw;
+}
+
+.latte{
+    width:70%;
+    height:auto;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+p{
+    margin-left:15%;
+}
+
+.log button{
+    background-color: transparent;
+    border:solid 2px rgb(255, 223, 176);
+    color:rgb(255, 223, 176);
+    border-radius:5px;
+    padding:5px;
+    margin:5px;
+}
+
+.log button:hover{
+    border-color: rgb(255, 238, 213);
+    color:rgb(255, 238, 213);
+}
+
+.log button:active{
+    border-color: rgb(255, 199, 114);
+    color:rgb(255, 199, 114);
+}
+
+form{
+    padding:5%;
+    padding-left:15%;
+}
+
+form p{
+    margin:0;
+    margin-top:5px;
+}
+
+.support{
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+footer{
+    padding:30px 100px 30px 100px;
+    color:white;
+    background-color:black;
+    border-top:2px solid white;
+}
+
+.linevert{
+    background-color:white;
+    height:100%;
+    width:3px;
+}
+
+.p{
+    margin:0;
+}
+
+.footlink{
+    border-right:2px solid white;
+}
+
+.support div{
+    margin:20px;
+    padding:20px;
+}
+
+.conections{
+    display:flex;
+    justify-content:space-between;
+    margin:0 20px 0 20px;
+    padding:0 20px 0 20px;
+}
+
+.conections a{
+    font-size:20px;
+    color:white;
+}

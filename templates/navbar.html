@@ -1,0 +1,49 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid bg-dark">
+        <a class="navbar-brand" href="/">Coffe Store <i class="fas fa-coffee"></i></a>
+        <div class="d-flex" role="search">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-dark" id="main-nav">
+            <ul class="navbar-nav">
+                <li> {% if current_user.is_authenticated %}
+                    <a class="log" href="/logout">
+                        <button>Log out</button>
+                    </a>
+                    {% else %}
+                    <a class="log" href="/login">
+                        <button>Log in</button>
+                    </a>
+                    <a class="log" href="/singin">
+                        <button>Sing in</button>
+                    </a>
+                    {% endif %}
+                </li>
+                {% if current_user.role == "admin" %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/add_product">Add Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/add_category">Add Category</a>
+                </li>
+                {% endif %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/all_products">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/products/2">Electro Devises</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/products/1">Coffe Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">My Shopping Cart <i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
